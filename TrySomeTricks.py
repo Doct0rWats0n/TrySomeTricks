@@ -1,11 +1,14 @@
 from RSA import RSA_code
 from AES_file import AES_code
 from XOR import XOR_code
+from IMG import IMG_code
 
 print('''Привет! Это текстовая версия "Шифратора". 
 Что зашифровать или расшифровать?
 - Сообщение
-- Файл''')
+- Файл
+Дополнительные функции:
+- Текст в изображении''')
 
 choice = input().lower()
 
@@ -33,3 +36,5 @@ elif choice.startswith('ф'):
 - AES''')
         if choice.startswith('a'):
             print(AES_code())
+elif choice.startswith('т'):
+    IMG_code()
